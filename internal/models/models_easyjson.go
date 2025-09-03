@@ -36,6 +36,8 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *j
 			continue
 		}
 		switch key {
+		case "Size":
+			out.Size = float64(in.Float64())
 		case "Price":
 			out.Price = float64(in.Float64())
 		case "Timestamp":
@@ -44,8 +46,6 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *j
 			out.TradeID = string(in.String())
 		case "Symbol":
 			out.Symbol = string(in.String())
-		case "Size":
-			out.Size = float32(in.Float32())
 		default:
 			in.SkipRecursive()
 		}
@@ -61,8 +61,13 @@ func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(out *
 	first := true
 	_ = first
 	{
-		const prefix string = ",\"Price\":"
+		const prefix string = ",\"Size\":"
 		out.RawString(prefix[1:])
+		out.Float64(float64(in.Size))
+	}
+	{
+		const prefix string = ",\"Price\":"
+		out.RawString(prefix)
 		out.Float64(float64(in.Price))
 	}
 	{
@@ -79,11 +84,6 @@ func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(out *
 		const prefix string = ",\"Symbol\":"
 		out.RawString(prefix)
 		out.String(string(in.Symbol))
-	}
-	{
-		const prefix string = ",\"Size\":"
-		out.RawString(prefix)
-		out.Float32(float32(in.Size))
 	}
 	out.RawByte('}')
 }

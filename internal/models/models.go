@@ -11,11 +11,11 @@ type Trade struct {
 	// The ideal solution is to use a small abritrary precision
 	// decimal library. There are some good competitors to shopsring decimal
 	// these days.
-	Price     float64 // 8 bytes
-	Timestamp int64   // 8 bytes
-	TradeID   string  // string header (16 bytes, pointer+len)
-	Symbol    string  // string header (16 bytes)
-	Size      float32 // 4 bytes
+	Size      float64
+	Price     float64
+	Timestamp int64
+	TradeID   string
+	Symbol    string
 }
 
 // OHLC represents a candle containing summary
@@ -31,6 +31,11 @@ type OHLC struct {
 	// Volume is a cumulative value of all trades
 	// for the candle and it would be ideal to
 	// use a arbitrary precision decimal library.
-	Volume    float64
+	//
+	// Volume is in Quote/Notional.
+	Volume float64
+	// Timestamp is the close time of the candle
+	// This makes it easy to check if the OHLC candle
+	// should be updated or not based on the current time
 	Timestamp int64
 }
