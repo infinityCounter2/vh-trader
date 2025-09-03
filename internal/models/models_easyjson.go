@@ -17,7 +17,73 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *jlexer.Lexer, out *Trade) {
+func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *jlexer.Lexer, out *TradeList) {
+	isTopLevel := in.IsStart()
+	if in.IsNull() {
+		in.Skip()
+		*out = nil
+	} else {
+		in.Delim('[')
+		if *out == nil {
+			if !in.IsDelim(']') {
+				*out = make(TradeList, 0, 1)
+			} else {
+				*out = TradeList{}
+			}
+		} else {
+			*out = (*out)[:0]
+		}
+		for !in.IsDelim(']') {
+			var v1 Trade
+			(v1).UnmarshalEasyJSON(in)
+			*out = append(*out, v1)
+			in.WantComma()
+		}
+		in.Delim(']')
+	}
+	if isTopLevel {
+		in.Consumed()
+	}
+}
+func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(out *jwriter.Writer, in TradeList) {
+	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
+		out.RawString("null")
+	} else {
+		out.RawByte('[')
+		for v2, v3 := range in {
+			if v2 > 0 {
+				out.RawByte(',')
+			}
+			(v3).MarshalEasyJSON(out)
+		}
+		out.RawByte(']')
+	}
+}
+
+// MarshalJSON supports json.Marshaler interface
+func (v TradeList) MarshalJSON() ([]byte, error) {
+	w := jwriter.Writer{}
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(&w, v)
+	return w.Buffer.BuildBytes(), w.Error
+}
+
+// MarshalEasyJSON supports easyjson.Marshaler interface
+func (v TradeList) MarshalEasyJSON(w *jwriter.Writer) {
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(w, v)
+}
+
+// UnmarshalJSON supports json.Unmarshaler interface
+func (v *TradeList) UnmarshalJSON(data []byte) error {
+	r := jlexer.Lexer{Data: data}
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(&r, v)
+	return r.Error()
+}
+
+// UnmarshalEasyJSON supports easyjson.Unmarshaler interface
+func (v *TradeList) UnmarshalEasyJSON(l *jlexer.Lexer) {
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(l, v)
+}
+func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(in *jlexer.Lexer, out *Trade) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -36,15 +102,15 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *j
 			continue
 		}
 		switch key {
-		case "Size":
+		case "size":
 			out.Size = float64(in.Float64())
-		case "Price":
+		case "price":
 			out.Price = float64(in.Float64())
-		case "Timestamp":
+		case "timestamp":
 			out.Timestamp = int64(in.Int64())
-		case "TradeID":
+		case "trade_id":
 			out.TradeID = string(in.String())
-		case "Symbol":
+		case "symbol":
 			out.Symbol = string(in.String())
 		default:
 			in.SkipRecursive()
@@ -56,32 +122,32 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(in *j
 		in.Consumed()
 	}
 }
-func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(out *jwriter.Writer, in Trade) {
+func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(out *jwriter.Writer, in Trade) {
 	out.RawByte('{')
 	first := true
 	_ = first
 	{
-		const prefix string = ",\"Size\":"
+		const prefix string = ",\"size\":"
 		out.RawString(prefix[1:])
 		out.Float64(float64(in.Size))
 	}
 	{
-		const prefix string = ",\"Price\":"
+		const prefix string = ",\"price\":"
 		out.RawString(prefix)
 		out.Float64(float64(in.Price))
 	}
 	{
-		const prefix string = ",\"Timestamp\":"
+		const prefix string = ",\"timestamp\":"
 		out.RawString(prefix)
 		out.Int64(int64(in.Timestamp))
 	}
 	{
-		const prefix string = ",\"TradeID\":"
+		const prefix string = ",\"trade_id\":"
 		out.RawString(prefix)
 		out.String(string(in.TradeID))
 	}
 	{
-		const prefix string = ",\"Symbol\":"
+		const prefix string = ",\"symbol\":"
 		out.RawString(prefix)
 		out.String(string(in.Symbol))
 	}
@@ -91,27 +157,93 @@ func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(out *
 // MarshalJSON supports json.Marshaler interface
 func (v Trade) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(&w, v)
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v Trade) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels(w, v)
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *Trade) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(&r, v)
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *Trade) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels(l, v)
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(l, v)
 }
-func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(in *jlexer.Lexer, out *OHLC) {
+func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels2(in *jlexer.Lexer, out *CandleList) {
+	isTopLevel := in.IsStart()
+	if in.IsNull() {
+		in.Skip()
+		*out = nil
+	} else {
+		in.Delim('[')
+		if *out == nil {
+			if !in.IsDelim(']') {
+				*out = make(CandleList, 0, 1)
+			} else {
+				*out = CandleList{}
+			}
+		} else {
+			*out = (*out)[:0]
+		}
+		for !in.IsDelim(']') {
+			var v4 Candle
+			(v4).UnmarshalEasyJSON(in)
+			*out = append(*out, v4)
+			in.WantComma()
+		}
+		in.Delim(']')
+	}
+	if isTopLevel {
+		in.Consumed()
+	}
+}
+func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels2(out *jwriter.Writer, in CandleList) {
+	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
+		out.RawString("null")
+	} else {
+		out.RawByte('[')
+		for v5, v6 := range in {
+			if v5 > 0 {
+				out.RawByte(',')
+			}
+			(v6).MarshalEasyJSON(out)
+		}
+		out.RawByte(']')
+	}
+}
+
+// MarshalJSON supports json.Marshaler interface
+func (v CandleList) MarshalJSON() ([]byte, error) {
+	w := jwriter.Writer{}
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels2(&w, v)
+	return w.Buffer.BuildBytes(), w.Error
+}
+
+// MarshalEasyJSON supports easyjson.Marshaler interface
+func (v CandleList) MarshalEasyJSON(w *jwriter.Writer) {
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels2(w, v)
+}
+
+// UnmarshalJSON supports json.Unmarshaler interface
+func (v *CandleList) UnmarshalJSON(data []byte) error {
+	r := jlexer.Lexer{Data: data}
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels2(&r, v)
+	return r.Error()
+}
+
+// UnmarshalEasyJSON supports easyjson.Unmarshaler interface
+func (v *CandleList) UnmarshalEasyJSON(l *jlexer.Lexer) {
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels2(l, v)
+}
+func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels3(in *jlexer.Lexer, out *Candle) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -130,17 +262,17 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(in *
 			continue
 		}
 		switch key {
-		case "Open":
+		case "open":
 			out.Open = float64(in.Float64())
-		case "High":
+		case "high":
 			out.High = float64(in.Float64())
-		case "Low":
+		case "low":
 			out.Low = float64(in.Float64())
-		case "Close":
+		case "close":
 			out.Close = float64(in.Float64())
-		case "Volume":
+		case "volume":
 			out.Volume = float64(in.Float64())
-		case "Timestamp":
+		case "timestamp":
 			out.Timestamp = int64(in.Int64())
 		default:
 			in.SkipRecursive()
@@ -152,37 +284,37 @@ func easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(in *
 		in.Consumed()
 	}
 }
-func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(out *jwriter.Writer, in OHLC) {
+func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels3(out *jwriter.Writer, in Candle) {
 	out.RawByte('{')
 	first := true
 	_ = first
 	{
-		const prefix string = ",\"Open\":"
+		const prefix string = ",\"open\":"
 		out.RawString(prefix[1:])
 		out.Float64(float64(in.Open))
 	}
 	{
-		const prefix string = ",\"High\":"
+		const prefix string = ",\"high\":"
 		out.RawString(prefix)
 		out.Float64(float64(in.High))
 	}
 	{
-		const prefix string = ",\"Low\":"
+		const prefix string = ",\"low\":"
 		out.RawString(prefix)
 		out.Float64(float64(in.Low))
 	}
 	{
-		const prefix string = ",\"Close\":"
+		const prefix string = ",\"close\":"
 		out.RawString(prefix)
 		out.Float64(float64(in.Close))
 	}
 	{
-		const prefix string = ",\"Volume\":"
+		const prefix string = ",\"volume\":"
 		out.RawString(prefix)
 		out.Float64(float64(in.Volume))
 	}
 	{
-		const prefix string = ",\"Timestamp\":"
+		const prefix string = ",\"timestamp\":"
 		out.RawString(prefix)
 		out.Int64(int64(in.Timestamp))
 	}
@@ -190,25 +322,25 @@ func easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(out 
 }
 
 // MarshalJSON supports json.Marshaler interface
-func (v OHLC) MarshalJSON() ([]byte, error) {
+func (v Candle) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(&w, v)
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels3(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
-func (v OHLC) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels1(w, v)
+func (v Candle) MarshalEasyJSON(w *jwriter.Writer) {
+	easyjsonD2b7633eEncodeGithubComInfinityCounter2VhTraderInternalModels3(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
-func (v *OHLC) UnmarshalJSON(data []byte) error {
+func (v *Candle) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(&r, v)
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels3(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
-func (v *OHLC) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels1(l, v)
+func (v *Candle) UnmarshalEasyJSON(l *jlexer.Lexer) {
+	easyjsonD2b7633eDecodeGithubComInfinityCounter2VhTraderInternalModels3(l, v)
 }

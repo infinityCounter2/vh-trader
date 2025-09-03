@@ -1,0 +1,982 @@
+[
+    {
+      "trade_id": "xrpperp_0001",
+      "symbol": "XRP-PERP",
+      "price": 14621.36,
+      "size": 3.3832,
+      "timestamp": 1756874983000
+    },
+    {
+      "trade_id": "xrpperp_0002",
+      "symbol": "XRP-PERP",
+      "price": 38127.29,
+      "size": 1.5478,
+      "timestamp": 1756874996000
+    },
+    {
+      "trade_id": "ethperp_0001",
+      "symbol": "ETH-PERP",
+      "price": 34466.87,
+      "size": 3.0839,
+      "timestamp": 1756874997000
+    },
+    {
+      "trade_id": "xrpperp_0003",
+      "symbol": "XRP-PERP",
+      "price": 12551.01,
+      "size": 0.085,
+      "timestamp": 1756874997000
+    },
+    {
+      "trade_id": "ethperp_0002",
+      "symbol": "ETH-PERP",
+      "price": 16217.49,
+      "size": 0.0255,
+      "timestamp": 1756875002000
+    },
+    {
+      "trade_id": "xrpperp_0004",
+      "symbol": "XRP-PERP",
+      "price": 42580.08,
+      "size": 4.6265,
+      "timestamp": 1756875117000
+    },
+    {
+      "trade_id": "xrpperp_0005",
+      "symbol": "XRP-PERP",
+      "price": 54213.6,
+      "size": 2.9598,
+      "timestamp": 1756875138000
+    },
+    {
+      "trade_id": "xrpperp_0006",
+      "symbol": "XRP-PERP",
+      "price": 38579.75,
+      "size": 2.8504,
+      "timestamp": 1756875154000
+    },
+    {
+      "trade_id": "btcperp_0001",
+      "symbol": "BTC-PERP",
+      "price": 51262.33,
+      "size": 2.3015,
+      "timestamp": 1756875156000
+    },
+    {
+      "trade_id": "btcperp_0002",
+      "symbol": "BTC-PERP",
+      "price": 12884.58,
+      "size": 0.6952,
+      "timestamp": 1756875162000
+    },
+    {
+      "trade_id": "btcperp_0003",
+      "symbol": "BTC-PERP",
+      "price": 53601.1,
+      "size": 0.9565,
+      "timestamp": 1756875167000
+    },
+    {
+      "trade_id": "btcperp_0004",
+      "symbol": "BTC-PERP",
+      "price": 35473.66,
+      "size": 4.1228,
+      "timestamp": 1756875175000
+    },
+    {
+      "trade_id": "ethperp_0003",
+      "symbol": "ETH-PERP",
+      "price": 16112.98,
+      "size": 0.8944,
+      "timestamp": 1756875242000
+    },
+    {
+      "trade_id": "ethperp_0004",
+      "symbol": "ETH-PERP",
+      "price": 31682.33,
+      "size": 3.5588,
+      "timestamp": 1756875263000
+    },
+    {
+      "trade_id": "ethperp_0005",
+      "symbol": "ETH-PERP",
+      "price": 22233.93,
+      "size": 0.6138,
+      "timestamp": 1756875271000
+    },
+    {
+      "trade_id": "ethperp_0006",
+      "symbol": "ETH-PERP",
+      "price": 29612.6,
+      "size": 0.1224,
+      "timestamp": 1756875275000
+    },
+    {
+      "trade_id": "btcperp_0005",
+      "symbol": "BTC-PERP",
+      "price": 7698.09,
+      "size": 0.8858,
+      "timestamp": 1756875295000
+    },
+    {
+      "trade_id": "btcperp_0006",
+      "symbol": "BTC-PERP",
+      "price": 23526.5,
+      "size": 0.3454,
+      "timestamp": 1756875323000
+    },
+    {
+      "trade_id": "btcperp_0007",
+      "symbol": "BTC-PERP",
+      "price": 45038.16,
+      "size": 2.0173,
+      "timestamp": 1756875324000
+    },
+    {
+      "trade_id": "xrpperp_0007",
+      "symbol": "XRP-PERP",
+      "price": 6094.07,
+      "size": 3.846,
+      "timestamp": 1756875394000
+    },
+    {
+      "trade_id": "btcperp_0008",
+      "symbol": "BTC-PERP",
+      "price": 19916.08,
+      "size": 3.7721,
+      "timestamp": 1756875444000
+    },
+    {
+      "trade_id": "btcperp_0009",
+      "symbol": "BTC-PERP",
+      "price": 43268.47,
+      "size": 0.0471,
+      "timestamp": 1756875445000
+    },
+    {
+      "trade_id": "ethperp_0007",
+      "symbol": "ETH-PERP",
+      "price": 38091.13,
+      "size": 1.3173,
+      "timestamp": 1756875515000
+    },
+    {
+      "trade_id": "ethperp_0008",
+      "symbol": "ETH-PERP",
+      "price": 55014.39,
+      "size": 1.6596,
+      "timestamp": 1756875575000
+    },
+    {
+      "trade_id": "ethperp_0009",
+      "symbol": "ETH-PERP",
+      "price": 53467.75,
+      "size": 4.6245,
+      "timestamp": 1756875594000
+    },
+    {
+      "trade_id": "xrpperp_0008",
+      "symbol": "XRP-PERP",
+      "price": 54807.45,
+      "size": 2.1958,
+      "timestamp": 1756875634000
+    },
+    {
+      "trade_id": "btcperp_0010",
+      "symbol": "BTC-PERP",
+      "price": 24587.97,
+      "size": 2.2233,
+      "timestamp": 1756875685000
+    },
+    {
+      "trade_id": "btcperp_0011",
+      "symbol": "BTC-PERP",
+      "price": 20557.8,
+      "size": 4.0536,
+      "timestamp": 1756875687000
+    },
+    {
+      "trade_id": "xrpperp_0009",
+      "symbol": "XRP-PERP",
+      "price": 59081.87,
+      "size": 4.8025,
+      "timestamp": 1756875694000
+    },
+    {
+      "trade_id": "btcperp_0012",
+      "symbol": "BTC-PERP",
+      "price": 56959.91,
+      "size": 0.55,
+      "timestamp": 1756875697000
+    },
+    {
+      "trade_id": "xrpperp_0010",
+      "symbol": "XRP-PERP",
+      "price": 19095.57,
+      "size": 3.8058,
+      "timestamp": 1756875708000
+    },
+    {
+      "trade_id": "ethperp_0010",
+      "symbol": "ETH-PERP",
+      "price": 22204.32,
+      "size": 3.6158,
+      "timestamp": 1756875714000
+    },
+    {
+      "trade_id": "ethperp_0011",
+      "symbol": "ETH-PERP",
+      "price": 54633.12,
+      "size": 1.187,
+      "timestamp": 1756875743000
+    },
+    {
+      "trade_id": "ethperp_0012",
+      "symbol": "ETH-PERP",
+      "price": 12339.14,
+      "size": 3.825,
+      "timestamp": 1756875764000
+    },
+    {
+      "trade_id": "btcperp_0013",
+      "symbol": "BTC-PERP",
+      "price": 14945.1,
+      "size": 3.5646,
+      "timestamp": 1756875877000
+    },
+    {
+      "trade_id": "xrpperp_0011",
+      "symbol": "XRP-PERP",
+      "price": 20986.44,
+      "size": 2.9465,
+      "timestamp": 1756875888000
+    },
+    {
+      "trade_id": "btcperp_0014",
+      "symbol": "BTC-PERP",
+      "price": 27344.9,
+      "size": 0.441,
+      "timestamp": 1756875889000
+    },
+    {
+      "trade_id": "ethperp_0013",
+      "symbol": "ETH-PERP",
+      "price": 52649.91,
+      "size": 0.7826,
+      "timestamp": 1756876004000
+    },
+    {
+      "trade_id": "btcperp_0015",
+      "symbol": "BTC-PERP",
+      "price": 4176.6,
+      "size": 4.3996,
+      "timestamp": 1756876069000
+    },
+    {
+      "trade_id": "btcperp_0016",
+      "symbol": "BTC-PERP",
+      "price": 17899.11,
+      "size": 0.4665,
+      "timestamp": 1756876078000
+    },
+    {
+      "trade_id": "btcperp_0017",
+      "symbol": "BTC-PERP",
+      "price": 44266.99,
+      "size": 1.7661,
+      "timestamp": 1756876095000
+    },
+    {
+      "trade_id": "btcperp_0018",
+      "symbol": "BTC-PERP",
+      "price": 23837.12,
+      "size": 2.423,
+      "timestamp": 1756876114000
+    },
+    {
+      "trade_id": "ethperp_0014",
+      "symbol": "ETH-PERP",
+      "price": 7187.95,
+      "size": 4.3684,
+      "timestamp": 1756876124000
+    },
+    {
+      "trade_id": "ethperp_0015",
+      "symbol": "ETH-PERP",
+      "price": 32736.13,
+      "size": 1.7268,
+      "timestamp": 1756876139000
+    },
+    {
+      "trade_id": "ethperp_0016",
+      "symbol": "ETH-PERP",
+      "price": 21638.46,
+      "size": 0.3055,
+      "timestamp": 1756876140000
+    },
+    {
+      "trade_id": "xrpperp_0012",
+      "symbol": "XRP-PERP",
+      "price": 55960.4,
+      "size": 0.5602,
+      "timestamp": 1756876188000
+    },
+    {
+      "trade_id": "xrpperp_0013",
+      "symbol": "XRP-PERP",
+      "price": 5011.06,
+      "size": 1.744,
+      "timestamp": 1756876200000
+    },
+    {
+      "trade_id": "xrpperp_0014",
+      "symbol": "XRP-PERP",
+      "price": 48287.55,
+      "size": 3.0955,
+      "timestamp": 1756876216000
+    },
+    {
+      "trade_id": "xrpperp_0015",
+      "symbol": "XRP-PERP",
+      "price": 57650.86,
+      "size": 1.2634,
+      "timestamp": 1756876229000
+    },
+    {
+      "trade_id": "xrpperp_0016",
+      "symbol": "XRP-PERP",
+      "price": 14325.41,
+      "size": 0.904,
+      "timestamp": 1756876250000
+    },
+    {
+      "trade_id": "btcperp_0019",
+      "symbol": "BTC-PERP",
+      "price": 15071.38,
+      "size": 1.5197,
+      "timestamp": 1756876294000
+    },
+    {
+      "trade_id": "xrpperp_0017",
+      "symbol": "XRP-PERP",
+      "price": 25777.72,
+      "size": 1.6215,
+      "timestamp": 1756876310000
+    },
+    {
+      "trade_id": "btcperp_0020",
+      "symbol": "BTC-PERP",
+      "price": 45095.6,
+      "size": 2.7426,
+      "timestamp": 1756876311000
+    },
+    {
+      "trade_id": "xrpperp_0018",
+      "symbol": "XRP-PERP",
+      "price": 25877.91,
+      "size": 4.4538,
+      "timestamp": 1756876330000
+    },
+    {
+      "trade_id": "btcperp_0021",
+      "symbol": "BTC-PERP",
+      "price": 16670.66,
+      "size": 2.342,
+      "timestamp": 1756876371000
+    },
+    {
+      "trade_id": "ethperp_0017",
+      "symbol": "ETH-PERP",
+      "price": 29317.48,
+      "size": 0.2904,
+      "timestamp": 1756876380000
+    },
+    {
+      "trade_id": "ethperp_0018",
+      "symbol": "ETH-PERP",
+      "price": 59304.18,
+      "size": 0.2965,
+      "timestamp": 1756876401000
+    },
+    {
+      "trade_id": "btcperp_0022",
+      "symbol": "BTC-PERP",
+      "price": 25634.46,
+      "size": 4.4411,
+      "timestamp": 1756876431000
+    },
+    {
+      "trade_id": "btcperp_0023",
+      "symbol": "BTC-PERP",
+      "price": 51784.82,
+      "size": 4.4935,
+      "timestamp": 1756876456000
+    },
+    {
+      "trade_id": "btcperp_0024",
+      "symbol": "BTC-PERP",
+      "price": 15729.91,
+      "size": 4.5518,
+      "timestamp": 1756876461000
+    },
+    {
+      "trade_id": "xrpperp_0019",
+      "symbol": "XRP-PERP",
+      "price": 31687.13,
+      "size": 3.5678,
+      "timestamp": 1756876510000
+    },
+    {
+      "trade_id": "xrpperp_0020",
+      "symbol": "XRP-PERP",
+      "price": 59589.39,
+      "size": 0.3532,
+      "timestamp": 1756876514000
+    },
+    {
+      "trade_id": "btcperp_0025",
+      "symbol": "BTC-PERP",
+      "price": 11382.77,
+      "size": 3.6269,
+      "timestamp": 1756876581000
+    },
+    {
+      "trade_id": "ethperp_0019",
+      "symbol": "ETH-PERP",
+      "price": 14488.06,
+      "size": 4.6722,
+      "timestamp": 1756876641000
+    },
+    {
+      "trade_id": "ethperp_0020",
+      "symbol": "ETH-PERP",
+      "price": 46001.99,
+      "size": 1.3098,
+      "timestamp": 1756876669000
+    },
+    {
+      "trade_id": "ethperp_0021",
+      "symbol": "ETH-PERP",
+      "price": 35406.15,
+      "size": 3.6106,
+      "timestamp": 1756876697000
+    },
+    {
+      "trade_id": "xrpperp_0021",
+      "symbol": "XRP-PERP",
+      "price": 56204.03,
+      "size": 3.7959,
+      "timestamp": 1756876754000
+    },
+    {
+      "trade_id": "btcperp_0026",
+      "symbol": "BTC-PERP",
+      "price": 2814.73,
+      "size": 4.9374,
+      "timestamp": 1756876761000
+    },
+    {
+      "trade_id": "ethperp_0022",
+      "symbol": "ETH-PERP",
+      "price": 11512.2,
+      "size": 2.3791,
+      "timestamp": 1756876817000
+    },
+    {
+      "trade_id": "ethperp_0023",
+      "symbol": "ETH-PERP",
+      "price": 35746.68,
+      "size": 4.4417,
+      "timestamp": 1756876835000
+    },
+    {
+      "trade_id": "btcperp_0027",
+      "symbol": "BTC-PERP",
+      "price": 45173.93,
+      "size": 0.8028,
+      "timestamp": 1756876881000
+    },
+    {
+      "trade_id": "btcperp_0028",
+      "symbol": "BTC-PERP",
+      "price": 54203.87,
+      "size": 2.8547,
+      "timestamp": 1756876883000
+    },
+    {
+      "trade_id": "ethperp_0024",
+      "symbol": "ETH-PERP",
+      "price": 28290.29,
+      "size": 3.0759,
+      "timestamp": 1756876895000
+    },
+    {
+      "trade_id": "ethperp_0025",
+      "symbol": "ETH-PERP",
+      "price": 53407.52,
+      "size": 4.0506,
+      "timestamp": 1756876916000
+    },
+    {
+      "trade_id": "xrpperp_0022",
+      "symbol": "XRP-PERP",
+      "price": 32535.25,
+      "size": 0.4654,
+      "timestamp": 1756876934000
+    },
+    {
+      "trade_id": "xrpperp_0023",
+      "symbol": "XRP-PERP",
+      "price": 23077.62,
+      "size": 4.5025,
+      "timestamp": 1756876945000
+    },
+    {
+      "trade_id": "xrpperp_0024",
+      "symbol": "XRP-PERP",
+      "price": 38948.2,
+      "size": 4.8921,
+      "timestamp": 1756876965000
+    },
+    {
+      "trade_id": "btcperp_0029",
+      "symbol": "BTC-PERP",
+      "price": 58169.51,
+      "size": 2.3056,
+      "timestamp": 1756877003000
+    },
+    {
+      "trade_id": "btcperp_0030",
+      "symbol": "BTC-PERP",
+      "price": 54400.77,
+      "size": 3.3304,
+      "timestamp": 1756877063000
+    },
+    {
+      "trade_id": "btcperp_0031",
+      "symbol": "BTC-PERP",
+      "price": 16563.25,
+      "size": 2.6414,
+      "timestamp": 1756877086000
+    },
+    {
+      "trade_id": "btcperp_0032",
+      "symbol": "BTC-PERP",
+      "price": 5046.84,
+      "size": 1.2284,
+      "timestamp": 1756877091000
+    },
+    {
+      "trade_id": "ethperp_0026",
+      "symbol": "ETH-PERP",
+      "price": 12067.64,
+      "size": 0.7816,
+      "timestamp": 1756877156000
+    },
+    {
+      "trade_id": "ethperp_0027",
+      "symbol": "ETH-PERP",
+      "price": 28371.59,
+      "size": 4.0928,
+      "timestamp": 1756877216000
+    },
+    {
+      "trade_id": "xrpperp_0025",
+      "symbol": "XRP-PERP",
+      "price": 43380.94,
+      "size": 0.4348,
+      "timestamp": 1756877265000
+    },
+    {
+      "trade_id": "ethperp_0028",
+      "symbol": "ETH-PERP",
+      "price": 30215.26,
+      "size": 0.6771,
+      "timestamp": 1756877336000
+    },
+    {
+      "trade_id": "ethperp_0029",
+      "symbol": "ETH-PERP",
+      "price": 35464.4,
+      "size": 0.1859,
+      "timestamp": 1756877356000
+    },
+    {
+      "trade_id": "ethperp_0030",
+      "symbol": "ETH-PERP",
+      "price": 45176.38,
+      "size": 2.1526,
+      "timestamp": 1756877364000
+    },
+    {
+      "trade_id": "btcperp_0033",
+      "symbol": "BTC-PERP",
+      "price": 47220.79,
+      "size": 4.293,
+      "timestamp": 1756877391000
+    },
+    {
+      "trade_id": "btcperp_0034",
+      "symbol": "BTC-PERP",
+      "price": 19342.13,
+      "size": 2.9551,
+      "timestamp": 1756877451000
+    },
+    {
+      "trade_id": "btcperp_0035",
+      "symbol": "BTC-PERP",
+      "price": 24937.57,
+      "size": 0.323,
+      "timestamp": 1756877457000
+    },
+    {
+      "trade_id": "btcperp_0036",
+      "symbol": "BTC-PERP",
+      "price": 13181.94,
+      "size": 3.789,
+      "timestamp": 1756877467000
+    },
+    {
+      "trade_id": "btcperp_0037",
+      "symbol": "BTC-PERP",
+      "price": 52719.16,
+      "size": 3.3819,
+      "timestamp": 1756877482000
+    },
+    {
+      "trade_id": "btcperp_0038",
+      "symbol": "BTC-PERP",
+      "price": 27922.74,
+      "size": 4.0094,
+      "timestamp": 1756877497000
+    },
+    {
+      "trade_id": "xrpperp_0026",
+      "symbol": "XRP-PERP",
+      "price": 17204.94,
+      "size": 0.4154,
+      "timestamp": 1756877505000
+    },
+    {
+      "trade_id": "btcperp_0039",
+      "symbol": "BTC-PERP",
+      "price": 54451.91,
+      "size": 0.7089,
+      "timestamp": 1756877508000
+    },
+    {
+      "trade_id": "btcperp_0040",
+      "symbol": "BTC-PERP",
+      "price": 34456.74,
+      "size": 0.987,
+      "timestamp": 1756877510000
+    },
+    {
+      "trade_id": "ethperp_0031",
+      "symbol": "ETH-PERP",
+      "price": 56985.31,
+      "size": 2.2268,
+      "timestamp": 1756877664000
+    },
+    {
+      "trade_id": "xrpperp_0027",
+      "symbol": "XRP-PERP",
+      "price": 28033.66,
+      "size": 2.0935,
+      "timestamp": 1756877745000
+    },
+    {
+      "trade_id": "btcperp_0041",
+      "symbol": "BTC-PERP",
+      "price": 45633.8,
+      "size": 0.4672,
+      "timestamp": 1756877750000
+    },
+    {
+      "trade_id": "ethperp_0032",
+      "symbol": "ETH-PERP",
+      "price": 8817.89,
+      "size": 2.1694,
+      "timestamp": 1756877844000
+    },
+    {
+      "trade_id": "ethperp_0033",
+      "symbol": "ETH-PERP",
+      "price": 27913.84,
+      "size": 2.5499,
+      "timestamp": 1756877964000
+    },
+    {
+      "trade_id": "xrpperp_0028",
+      "symbol": "XRP-PERP",
+      "price": 13139.72,
+      "size": 4.3454,
+      "timestamp": 1756877985000
+    },
+    {
+      "trade_id": "xrpperp_0029",
+      "symbol": "XRP-PERP",
+      "price": 26977.68,
+      "size": 4.0737,
+      "timestamp": 1756877987000
+    },
+    {
+      "trade_id": "xrpperp_0030",
+      "symbol": "XRP-PERP",
+      "price": 50956.15,
+      "size": 4.3935,
+      "timestamp": 1756877993000
+    },
+    {
+      "trade_id": "xrpperp_0031",
+      "symbol": "XRP-PERP",
+      "price": 14776.45,
+      "size": 1.0727,
+      "timestamp": 1756878011000
+    },
+    {
+      "trade_id": "xrpperp_0032",
+      "symbol": "XRP-PERP",
+      "price": 7705.28,
+      "size": 4.5578,
+      "timestamp": 1756878039000
+    },
+    {
+      "trade_id": "btcperp_0042",
+      "symbol": "BTC-PERP",
+      "price": 18987.04,
+      "size": 0.1644,
+      "timestamp": 1756878050000
+    },
+    {
+      "trade_id": "btcperp_0043",
+      "symbol": "BTC-PERP",
+      "price": 39131.22,
+      "size": 1.3151,
+      "timestamp": 1756878170000
+    },
+    {
+      "trade_id": "ethperp_0034",
+      "symbol": "ETH-PERP",
+      "price": 36380.38,
+      "size": 3.2252,
+      "timestamp": 1756878264000
+    },
+    {
+      "trade_id": "xrpperp_0033",
+      "symbol": "XRP-PERP",
+      "price": 5746.55,
+      "size": 0.7419,
+      "timestamp": 1756878279000
+    },
+    {
+      "trade_id": "btcperp_0044",
+      "symbol": "BTC-PERP",
+      "price": 42370.2,
+      "size": 1.527,
+      "timestamp": 1756878290000
+    },
+    {
+      "trade_id": "xrpperp_0034",
+      "symbol": "XRP-PERP",
+      "price": 43834.6,
+      "size": 2.1801,
+      "timestamp": 1756878294000
+    },
+    {
+      "trade_id": "xrpperp_0035",
+      "symbol": "XRP-PERP",
+      "price": 3119.31,
+      "size": 3.5283,
+      "timestamp": 1756878299000
+    },
+    {
+      "trade_id": "btcperp_0045",
+      "symbol": "BTC-PERP",
+      "price": 41118.36,
+      "size": 3.3521,
+      "timestamp": 1756878304000
+    },
+    {
+      "trade_id": "ethperp_0035",
+      "symbol": "ETH-PERP",
+      "price": 16144.08,
+      "size": 0.9841,
+      "timestamp": 1756878504000
+    },
+    {
+      "trade_id": "ethperp_0036",
+      "symbol": "ETH-PERP",
+      "price": 15334.16,
+      "size": 0.73,
+      "timestamp": 1756878521000
+    },
+    {
+      "trade_id": "btcperp_0046",
+      "symbol": "BTC-PERP",
+      "price": 30023.91,
+      "size": 2.3419,
+      "timestamp": 1756878604000
+    },
+    {
+      "trade_id": "btcperp_0047",
+      "symbol": "BTC-PERP",
+      "price": 18090.78,
+      "size": 2.3588,
+      "timestamp": 1756878724000
+    },
+    {
+      "trade_id": "btcperp_0048",
+      "symbol": "BTC-PERP",
+      "price": 31126.28,
+      "size": 2.0289,
+      "timestamp": 1756878733000
+    },
+    {
+      "trade_id": "btcperp_0049",
+      "symbol": "BTC-PERP",
+      "price": 59540.24,
+      "size": 4.9975,
+      "timestamp": 1756878754000
+    },
+    {
+      "trade_id": "ethperp_0037",
+      "symbol": "ETH-PERP",
+      "price": 43297.22,
+      "size": 3.9752,
+      "timestamp": 1756878761000
+    },
+    {
+      "trade_id": "ethperp_0038",
+      "symbol": "ETH-PERP",
+      "price": 51602.38,
+      "size": 2.3912,
+      "timestamp": 1756878763000
+    },
+    {
+      "trade_id": "btcperp_0050",
+      "symbol": "BTC-PERP",
+      "price": 59622.33,
+      "size": 3.0628,
+      "timestamp": 1756878814000
+    },
+    {
+      "trade_id": "btcperp_0051",
+      "symbol": "BTC-PERP",
+      "price": 59706.59,
+      "size": 2.8235,
+      "timestamp": 1756878816000
+    },
+    {
+      "trade_id": "ethperp_0039",
+      "symbol": "ETH-PERP",
+      "price": 8359.42,
+      "size": 2.7775,
+      "timestamp": 1756878883000
+    },
+    {
+      "trade_id": "btcperp_0052",
+      "symbol": "BTC-PERP",
+      "price": 42160.32,
+      "size": 4.094,
+      "timestamp": 1756879116000
+    },
+    {
+      "trade_id": "ethperp_0040",
+      "symbol": "ETH-PERP",
+      "price": 44317.67,
+      "size": 2.6899,
+      "timestamp": 1756879183000
+    },
+    {
+      "trade_id": "btcperp_0053",
+      "symbol": "BTC-PERP",
+      "price": 56981.61,
+      "size": 3.9418,
+      "timestamp": 1756879236000
+    },
+    {
+      "trade_id": "btcperp_0054",
+      "symbol": "BTC-PERP",
+      "price": 4249.44,
+      "size": 3.8172,
+      "timestamp": 1756879536000
+    },
+    {
+      "trade_id": "btcperp_0055",
+      "symbol": "BTC-PERP",
+      "price": 21324.69,
+      "size": 0.8235,
+      "timestamp": 1756879555000
+    },
+    {
+      "trade_id": "btcperp_0056",
+      "symbol": "BTC-PERP",
+      "price": 29149.58,
+      "size": 1.8159,
+      "timestamp": 1756879580000
+    },
+    {
+      "trade_id": "btcperp_0057",
+      "symbol": "BTC-PERP",
+      "price": 28037.07,
+      "size": 1.0575,
+      "timestamp": 1756879608000
+    },
+    {
+      "trade_id": "btcperp_0058",
+      "symbol": "BTC-PERP",
+      "price": 3791.26,
+      "size": 3.7235,
+      "timestamp": 1756879609000
+    },
+    {
+      "trade_id": "btcperp_0059",
+      "symbol": "BTC-PERP",
+      "price": 16152.17,
+      "size": 4.9452,
+      "timestamp": 1756879729000
+    },
+    {
+      "trade_id": "btcperp_0060",
+      "symbol": "BTC-PERP",
+      "price": 47810.01,
+      "size": 1.7449,
+      "timestamp": 1756879739000
+    },
+    {
+      "trade_id": "btcperp_0061",
+      "symbol": "BTC-PERP",
+      "price": 45473.13,
+      "size": 4.4942,
+      "timestamp": 1756879744000
+    },
+    {
+      "trade_id": "btcperp_0062",
+      "symbol": "BTC-PERP",
+      "price": 48153.84,
+      "size": 1.6377,
+      "timestamp": 1756879757000
+    },
+    {
+      "trade_id": "btcperp_0063",
+      "symbol": "BTC-PERP",
+      "price": 58645.88,
+      "size": 1.6354,
+      "timestamp": 1756879877000
+    },
+    {
+      "trade_id": "btcperp_0064",
+      "symbol": "BTC-PERP",
+      "price": 10964.5,
+      "size": 4.1484,
+      "timestamp": 1756880177000
+    },
+    {
+      "trade_id": "btcperp_0065",
+      "symbol": "BTC-PERP",
+      "price": 22098.65,
+      "size": 0.5252,
+      "timestamp": 1756880417000
+    }
+]

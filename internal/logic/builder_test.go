@@ -201,7 +201,7 @@ func TestInitializeCandle(t *testing.T) {
 
 func TestUpdateCandle(t *testing.T) {
 	// Test with an empty candle
-	candle := &models.OHLC{}
+	candle := &models.Candle{}
 	trade1 := models.Trade{Price: 100.0, Size: 1.0}
 	updateCandle(candle, trade1)
 	expectedVolume1 := trade1.Price * trade1.Size

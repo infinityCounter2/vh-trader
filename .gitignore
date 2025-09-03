@@ -1,0 +1,49 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go build artifacts
+*.out
+*.a
+
+# Build output
+bin/
+build/
+dist/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Dependency directories (if vendored)
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Coverage / profiling files
+*.coverprofile
+*.pprof
+
+# Cache
+*.cache
+*.pyc
+__pycache__/

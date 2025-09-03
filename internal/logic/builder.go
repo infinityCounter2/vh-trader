@@ -17,18 +17,25 @@ const (
 	BuilderInterval1h  BuilderInterval = time.Hour
 )
 
+var BuilderIntervals = []BuilderInterval{
+	BuilderInterval1m,
+	BuilderInterval5m,
+	BuilderInterval15m,
+	BuilderInterval1h,
+}
+
 type CandleBuilderParams struct {
 	Interval BuilderInterval
 }
 
 // CandleBuilder is a structure that processes trades
-// to consturct OHLC candles
+// to consturct Candle candles
 type CandleBuilder struct {
 	p CandleBuilderParams
 
-	current *models.OHLC
+	current *models.Candle
 
-	// closed contains all the OHLC
+	// closed contains all the Candle
 	// Candles that have alread elapsed.
 	//
 	// These should be routinely flushed
@@ -37,19 +44,19 @@ type CandleBuilder struct {
 	// At that point a mutex should be added to protect this.
 	//
 	// Keyed by the timestamp of the candle.
-	closed map[int64]models.OHLC
+	closed map[int64]models.Candle
 }
 
 func NewBuilder(p CandleBuilderParams) *CandleBuilder {
 	return &CandleBuilder{
 		p:      p,
-		closed: make(map[int64]models.OHLC),
+		closed: make(map[int64]models.Candle),
 	}
 }
 
 // ProcessTrades batch updates the CandleBuilder with the trades given.
 //
-// The appropriate OHLC candle is updated for each trade included. Candles
+// The appropriate Candle candle is updated for each trade included. Candles
 // that do not exist at the time will be created.
 func (c *CandleBuilder) ProcessTrades(trades []models.Trade) {
 	for _, t := range trades {
@@ -58,7 +65,7 @@ func (c *CandleBuilder) ProcessTrades(trades []models.Trade) {
 }
 
 func (c *CandleBuilder) processTrade(t models.Trade) {
-	exec := time.Unix(t.Timestamp, 0).UTC()
+	exec := time.Unix(0, t.Timestamp*int64(time.Millisecond)).UTC()
 	tradeCandleTime := roundUpTime(exec, c.p.Interval)
 
 	if c.current != nil && tradeCandleTime == c.current.Timestamp {
@@ -90,12 +97,12 @@ func (c *CandleBuilder) processTrade(t models.Trade) {
 // Ideally the builder has some POP Candles method that is called by client code
 // to fetch closed candles, and then that's used by some API/data layer instead
 // of having this GetCandles method.
-func (c *CandleBuilder) GetCandles() []models.OHLC {
+func (c *CandleBuilder) GetCandles() models.CandleList {
 	if c.current == nil && len(c.closed) == 0 {
 		return nil
 	}
 
-	candles := make([]models.OHLC, 0, len(c.closed)+1)
+	candles := make([]models.Candle, 0, len(c.closed)+1)
 	for _, c := range c.closed {
 		candles = append(candles, c)
 	}
@@ -107,18 +114,18 @@ func (c *CandleBuilder) GetCandles() []models.OHLC {
 		return candles[i].Timestamp < candles[j].Timestamp
 	})
 
-	return candles
+	return models.CandleList(candles)
 }
 
-func initializeCandle(candleTime int64, t models.Trade) *models.OHLC {
-	candle := &models.OHLC{
+func initializeCandle(candleTime int64, t models.Trade) *models.Candle {
+	candle := &models.Candle{
 		Timestamp: candleTime,
 	}
 	updateCandle(candle, t)
 	return candle
 }
 
-func updateCandle(candle *models.OHLC, t models.Trade) {
+func updateCandle(candle *models.Candle, t models.Trade) {
 	if candle.Volume == 0 {
 		// Empty candle so use this trade to set all values
 		candle.High = t.Price
@@ -136,7 +143,7 @@ func updateCandle(candle *models.OHLC, t models.Trade) {
 }
 
 // roundUpTime rounds the given time to the next multiple of the duration.
-// Use to calculate close time on a trade.
+// Use to calculate close time of candle for a trade.
 func roundUpTime(t time.Time, d time.Duration) int64 {
-	return t.Truncate(d).Add(d).Unix()
+	return t.Truncate(d).Add(d).Unix() * 1000
 }
